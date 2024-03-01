@@ -55,23 +55,8 @@ public class Main {
         bathtoob.addReptile(frog);
         bathtoob.addReptile(lizard);
 
-        Scanner scannerchecker = new Scanner(System.in);
-        int inputcheck;
 
-        do {
-            System.out.println("What do you want to check? 1 - Exposition, 2 - Animals");
-            inputcheck = scannerchecker.nextInt();
 
-            if (inputcheck == 1) {
-                Scanner expositionscanner = new Scanner(System.in);
-                System.out.println("What exposition do you want to check? 1 - Feline, 2 - Monkeyhouse, 3 - Insectarium, 4 - Bathtoob");
-            } else if (inputcheck == 2) {
-                Scanner animalscanner = new Scanner(System.in);
-                System.out.println("What animal do you want to visit? 1 - Lion, 2 - Monkey, 3 - Tiger, 4 - Roach, 5 - Spider, 6 - Scorpion, 7 - Crocodile, 8 - Frog, 9 - Lizard");
-            } else {
-                System.out.println("Invalid input");
-            }
-        } while (true);
 
 
 
