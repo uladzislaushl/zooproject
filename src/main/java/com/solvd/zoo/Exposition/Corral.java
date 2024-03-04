@@ -29,7 +29,7 @@ public class Corral extends Exposition {
         System.out.println("Name of the corral: " + getName());
         System.out.println("Area of the corral: " + getArea());
         System.out.println("Type of paddock: " + getPaddock());
-        System.out.println("Type of tree: " + getFeedingwindows());
+        System.out.println("Number of feeding windows: " + getFeedingwindows());
         System.out.println("Exhibits: " + getMammalList().size());
     }
 

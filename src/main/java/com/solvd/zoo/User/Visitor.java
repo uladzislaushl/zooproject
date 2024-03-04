@@ -1,36 +1,29 @@
 package com.solvd.zoo.User;
 
-import java.util.Scanner;
+import com.solvd.zoo.Exposition.Merchandise;
 
 public class Visitor implements Paying {
+    private String name;
+    private double money;
 
-    public static void askPayment(Visitor visitor, Scanner scannervisitor) {
-        System.out.print("Do you have a ticket? 1 - yes, 2 - no: ");
-        String input = scannervisitor.nextLine();
-
-        if (input.equals("1")) {
-            visitor.pay();
-        } else if (input.equals("2")) {
-            System.out.println("You don't have a ticket, goodbye!");
-        } else {
-            System.out.println("Invalid input, try again.");
-            askPayment(visitor, scannervisitor);
-        }
-    }
-
-    private boolean hasPaid;
-
-    public Visitor(){
-        this.hasPaid = false;
+    public Visitor(String name, double money) {
+        this.name = name;
+        this.money = money;
     }
 
     @Override
-    public void pay() {
-        hasPaid = true;
-        System.out.println();
+    public void pay(Merchandise merchandise) {
+        if (money >= merchandise.getPrice()) {
+            System.out.println(name + " buys " + merchandise.getName() + " for " + merchandise.getPrice());
+            money -= merchandise.getPrice();
+        } else {
+            System.out.println(name + " cannot buy " + merchandise.getName());
+        }
     }
 
-    public boolean hasPaid() {
-        return hasPaid;
+    public void displayInfo() {
+        System.out.println("Visitor: " + name);
+        System.out.println("Money: " + money);
     }
 }
+

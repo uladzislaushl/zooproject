@@ -13,6 +13,15 @@ public class Reptile extends Animal {
         this.skin = skin;
     }
 
+    @Override
+    public void displayInfo() {
+        System.out.println("Animal ID: " + getAnimalId());
+        System.out.println("Name: " + getAnimalId());
+        System.out.println("Age: " + getAge());
+        System.out.println("Skin: " + getSkin());
+        System.out.println("Tail: " + getSkin());
+    }
+
     public String getTail() {
         return tail;
     }

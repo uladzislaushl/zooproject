@@ -14,6 +14,15 @@ public class Mammal extends Animal {
             this.eyes = eyes;
         }
 
+    @Override
+    public void displayInfo() {
+        System.out.println("Animal ID: " + getAnimalId());
+        System.out.println("Name: " + getAnimalId());
+        System.out.println("Age: " + getAge());
+        System.out.println("Fur: " + getFur());
+        System.out.println("Eyes: " + getEyes());
+    }
+
         public String getFur() {
             return fur;
         }

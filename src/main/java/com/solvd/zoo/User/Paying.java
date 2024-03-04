@@ -1,6 +1,7 @@
 package com.solvd.zoo.User;
 
-public interface Paying {
+import com.solvd.zoo.Exposition.Merchandise;
 
-    void pay();
+public interface Paying {
+    void pay(Merchandise merchandise);
 }

@@ -33,7 +33,7 @@ public class Terrarium extends Exposition {
         System.out.println("Area of the terrarium: " + getArea());
         System.out.println("Type of the plants: " + getPlant());
         System.out.println("Number of accents: " + getAccents());
-        System.out.println("Number of exhibits: " + getReptileList());
+        System.out.println("Number of exhibits: " + getReptileList().size());
     }
 
     public String getPlant() {

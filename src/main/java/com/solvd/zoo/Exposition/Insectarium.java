@@ -28,7 +28,7 @@ public class Insectarium extends Exposition {
         System.out.println("Area of the insectarium: " + getArea());
         System.out.println("Number of boxes: " + getBox());
         System.out.println("Type of habitat: " + getHabitat());
-        System.out.println("Number of exhibits: " + getInsectList() );
+        System.out.println("Number of exhibits: " + getInsectList().size());
     }
 
     public int getBox() {

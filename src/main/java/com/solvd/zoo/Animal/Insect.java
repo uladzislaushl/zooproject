@@ -13,6 +13,15 @@ public class Insect extends Animal {
         this.abdomen = abdomen;
     }
 
+    @Override
+    public void displayInfo() {
+        System.out.println("Animal ID: " + getAnimalId());
+        System.out.println("Name: " + getAnimalId());
+        System.out.println("Age: " + getAge());
+        System.out.println("Antenna: " + getAntenna());
+        System.out.println("Abdomen: " + getAbdomen());
+    }
+
     public String getAntenna() {
         return antenna;
     }

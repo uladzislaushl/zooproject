@@ -60,5 +60,7 @@ public abstract class Animal implements IGreet, IOgle, ISound {
     @Override
     public void Wonder() {
     }
+
+    public abstract void displayInfo();
 }
 
